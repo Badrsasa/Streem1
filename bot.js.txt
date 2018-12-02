@@ -4,8 +4,8 @@ client.on('ready', () => {
   console.log(Logged in as ${client.user.tag}!);
 });
 
-const prefix = ">"
-var adminprefix = '>'
+const prefix = "--"
+var adminprefix = '--'
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
